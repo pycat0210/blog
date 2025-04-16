@@ -75,4 +75,4 @@ tags:
 
 ## 参考
 
-[红萌视频 - Another](https://hmoe.xyz/video/14739)
+* [红萌视频 - Another](https://hmoe.xyz/video/14739)
