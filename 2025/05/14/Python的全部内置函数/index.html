@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Python的全部内置函数 | 猫派的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Python的全部内置函数转载自 Python 的内建函数    函数名 详细 简介    abs abs 计算绝对值   aiter aiter 获取异步可迭代对象的迭代器   all all 判断可迭代对象内容是否全部为真值   anext anext 获取异步迭代器的下一数据项   any any 判断可迭代对象内容是否存在真值   ascii ascii 转换为字符串，非 ASCII 字符">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python的全部内置函数">
+<meta property="og:url" content="https://pycat0210.github.io/blog/2025/05/14/Python%E7%9A%84%E5%85%A8%E9%83%A8%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/index.html">
+<meta property="og:site_name" content="猫派的博客">
+<meta property="og:description" content="Python的全部内置函数转载自 Python 的内建函数    函数名 详细 简介    abs abs 计算绝对值   aiter aiter 获取异步可迭代对象的迭代器   all all 判断可迭代对象内容是否全部为真值   anext anext 获取异步迭代器的下一数据项   any any 判断可迭代对象内容是否存在真值   ascii ascii 转换为字符串，非 ASCII 字符">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-05-13T16:51:15.000Z">
+<meta property="article:modified_time" content="2025-05-13T16:52:23.704Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="Python">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/blog/atom.xml" title="猫派的博客" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/blog/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/blog/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/blog/" id="logo">猫派的博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/blog/">Home</a>
+        
+          <a class="main-nav-link" href="/blog/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          
+            <a class="nav-icon" target="_blank" rel="noopener" href="https://github.com/pycat0210"><span class="fa fa-github"></span></a>
+          
+        
+        
+          <a class="nav-icon" href="/blog/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://pycat0210.github.io/blog"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Python的全部内置函数" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/blog/2025/05/14/Python%E7%9A%84%E5%85%A8%E9%83%A8%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/" class="article-date">
+  <time class="dt-published" datetime="2025-05-13T16:51:15.000Z" itemprop="datePublished">2025-05-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Python的全部内置函数
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Python的全部内置函数"><a href="#Python的全部内置函数" class="headerlink" title="Python的全部内置函数"></a>Python的全部内置函数</h1><p>转载自 <a target="_blank" rel="noopener" href="https://gist.github.com/hubenchang0515/e5d7c948f33b3bcb1155bbe64f769c9f">Python 的内建函数</a></p>
+<table>
+<thead>
+<tr>
+<th align="left">函数名</th>
+<th align="left">详细</th>
+<th align="left">简介</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>abs</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.abs.md">abs</a></td>
+<td align="left">计算绝对值</td>
+</tr>
+<tr>
+<td align="left"><code>aiter</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.aiter.md">aiter</a></td>
+<td align="left">获取异步可迭代对象的迭代器</td>
+</tr>
+<tr>
+<td align="left"><code>all</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.all.md">all</a></td>
+<td align="left">判断可迭代对象内容是否全部为真值</td>
+</tr>
+<tr>
+<td align="left"><code>anext</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.anext.md">anext</a></td>
+<td align="left">获取异步迭代器的下一数据项</td>
+</tr>
+<tr>
+<td align="left"><code>any</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.any.md">any</a></td>
+<td align="left">判断可迭代对象内容是否存在真值</td>
+</tr>
+<tr>
+<td align="left"><code>ascii</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.ascii.md">ascii</a></td>
+<td align="left">转换为字符串，非 ASCII 字符将被转义</td>
+</tr>
+<tr>
+<td align="left"><code>bin</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.bin.md">bin</a></td>
+<td align="left">将一个整数转换为带前缀 <code>0b</code> 的二进制数字符串</td>
+</tr>
+<tr>
+<td align="left"><code>bool</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.bool.md">bool</a></td>
+<td align="left">类型转换为 <code>bool</code></td>
+</tr>
+<tr>
+<td align="left"><code>breakpoint</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.breakpoint.md">breakpoint</a></td>
+<td align="left">调用位置进入调试器</td>
+</tr>
+<tr>
+<td align="left"><code>bytearray</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.bytearray.md">bytearray</a></td>
+<td align="left">类型转换为 <code>bytearray</code></td>
+</tr>
+<tr>
+<td align="left"><code>bytes</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.bytes.md">bytes</a></td>
+<td align="left">类型转换为 <code>bytes</code></td>
+</tr>
+<tr>
+<td align="left"><code>callable</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.callable.md">callable</a></td>
+<td align="left">判断对象是否可调用</td>
+</tr>
+<tr>
+<td align="left"><code>chr</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.chr.md">chr</a></td>
+<td align="left">单个 Unicode 字符的整数编码转字符串</td>
+</tr>
+<tr>
+<td align="left"><code>classmethod</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.classmethod.md">classmethod</a></td>
+<td align="left">把一个方法封装成类方法</td>
+</tr>
+<tr>
+<td align="left"><code>compile</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.compile.md">compile</a></td>
+<td align="left">将 source 编译成代码或 AST 对象</td>
+</tr>
+<tr>
+<td align="left"><code>complex</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.complex.md">complex</a></td>
+<td align="left">类型转换为 <code>complex</code></td>
+</tr>
+<tr>
+<td align="left"><code>delattr</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.delattr.md">delattr</a></td>
+<td align="left">删除指定的属性</td>
+</tr>
+<tr>
+<td align="left"><code>dict</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.dict.md">dict</a></td>
+<td align="left">类型转换为 <code>dict</code></td>
+</tr>
+<tr>
+<td align="left"><code>dir</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.dir.md">dir</a></td>
+<td align="left">返回当前本地作用域中的名称列表或对象的属性列表</td>
+</tr>
+<tr>
+<td align="left"><code>divmod</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.divmod.md">divmod</a></td>
+<td align="left">返回整数除法时的商和余数</td>
+</tr>
+<tr>
+<td align="left"><code>enumerate</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.enumerate.md">enumerate</a></td>
+<td align="left">返回一个枚举对象</td>
+</tr>
+<tr>
+<td align="left"><code>eval</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.eval.md">eval</a></td>
+<td align="left">执行表达式并返回结果</td>
+</tr>
+<tr>
+<td align="left"><code>exec</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.exec.md">exec</a></td>
+<td align="left">执行代码</td>
+</tr>
+<tr>
+<td align="left"><code>filter</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.filter.md">filter</a></td>
+<td align="left">过滤数据</td>
+</tr>
+<tr>
+<td align="left"><code>float</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.float.md">float</a></td>
+<td align="left">类型转换为 <code>float</code></td>
+</tr>
+<tr>
+<td align="left"><code>format</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.format.md">format</a></td>
+<td align="left">格式化</td>
+</tr>
+<tr>
+<td align="left"><code>frozenset</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.frozenset.md">frozenset</a></td>
+<td align="left">类型转换为 <code>frozenset</code></td>
+</tr>
+<tr>
+<td align="left"><code>getattr</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.getattr.md">getattr</a></td>
+<td align="left">获取属性的值</td>
+</tr>
+<tr>
+<td align="left"><code>globals</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.globals.md">globals</a></td>
+<td align="left">返回实现当前模块命名空间的字典</td>
+</tr>
+<tr>
+<td align="left"><code>hasattr</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.hasattr.md">hasattr</a></td>
+<td align="left">判断属性是否存在</td>
+</tr>
+<tr>
+<td align="left"><code>hash</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.hash.md">hash</a></td>
+<td align="left">获取哈希值</td>
+</tr>
+<tr>
+<td align="left"><code>help</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.help.md">help</a></td>
+<td align="left">启动内置的帮助系统</td>
+</tr>
+<tr>
+<td align="left"><code>hex</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.hex.md">hex</a></td>
+<td align="left">将整数转换为带前缀 <code>0x</code> 前缀的小写十六进制数字符串</td>
+</tr>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.id.md">id</a></td>
+<td align="left">返回对象的 ID</td>
+</tr>
+<tr>
+<td align="left"><code>input</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.input.md">input</a></td>
+<td align="left">获取输入</td>
+</tr>
+<tr>
+<td align="left"><code>int</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.int.md">int</a></td>
+<td align="left">类型转换为 <code>int</code></td>
+</tr>
+<tr>
+<td align="left"><code>isinstance</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.isinstance.md">isinstance</a></td>
+<td align="left">判断是否是某个类型的实例</td>
+</tr>
+<tr>
+<td align="left"><code>issubclass</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.issubclass.md">issubclass</a></td>
+<td align="left">判断是否是某个类的子类</td>
+</tr>
+<tr>
+<td align="left"><code>iter</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.iter.md">iter</a></td>
+<td align="left">获取迭代器</td>
+</tr>
+<tr>
+<td align="left"><code>len</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.len.md">len</a></td>
+<td align="left">获取长度</td>
+</tr>
+<tr>
+<td align="left"><code>list</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.list.md">list</a></td>
+<td align="left">类型转换为 <code>list</code></td>
+</tr>
+<tr>
+<td align="left"><code>locals</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.locals.md">locals</a></td>
+<td align="left">返回一个代表当前局部符号表的映射对象</td>
+</tr>
+<tr>
+<td align="left"><code>map</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.map.md">map</a></td>
+<td align="left">将可迭代对象进行映射</td>
+</tr>
+<tr>
+<td align="left"><code>max</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.max.md">max</a></td>
+<td align="left">获取最大值</td>
+</tr>
+<tr>
+<td align="left"><code>memoryview</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.memoryview.md">memoryview</a></td>
+<td align="left">返回由给定实参创建的“内存视图”对象</td>
+</tr>
+<tr>
+<td align="left"><code>min</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.min.md">min</a></td>
+<td align="left">获取最小值</td>
+</tr>
+<tr>
+<td align="left"><code>next</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.next.md">next</a></td>
+<td align="left">获取迭代器的下一个元素</td>
+</tr>
+<tr>
+<td align="left"><code>object</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.object.md">object</a></td>
+<td align="left">所有类的终极基类，调用时构建一个基本对象</td>
+</tr>
+<tr>
+<td align="left"><code>oct</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.oct.md">oct</a></td>
+<td align="left">将整数转换为带前缀 <code>0o</code> 的八进制数字符串</td>
+</tr>
+<tr>
+<td align="left"><code>open</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.open.md">open</a></td>
+<td align="left">打开文件</td>
+</tr>
+<tr>
+<td align="left"><code>ord</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.ord.md">ord</a></td>
+<td align="left">单个 Unicode 字符的字符串转整数编码</td>
+</tr>
+<tr>
+<td align="left"><code>pow</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.pow.md">pow</a></td>
+<td align="left">计算乘方</td>
+</tr>
+<tr>
+<td align="left"><code>print</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.print.md">print</a></td>
+<td align="left">打印</td>
+</tr>
+<tr>
+<td align="left"><code>property</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.property.md">property</a></td>
+<td align="left">创建属性</td>
+</tr>
+<tr>
+<td align="left"><code>range</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.range.md">range</a></td>
+<td align="left">生成范围序列</td>
+</tr>
+<tr>
+<td align="left"><code>repr</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.repr.md">repr</a></td>
+<td align="left">转换为字符串</td>
+</tr>
+<tr>
+<td align="left"><code>reversed</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.reversed.md">reversed</a></td>
+<td align="left">迭代器逆转</td>
+</tr>
+<tr>
+<td align="left"><code>round</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.round.md">round</a></td>
+<td align="left">四舍五入</td>
+</tr>
+<tr>
+<td align="left"><code>set</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.set.md">set</a></td>
+<td align="left">类型转换为 <code>set</code></td>
+</tr>
+<tr>
+<td align="left"><code>setattr</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.setattr.md">setattr</a></td>
+<td align="left">设置属性的值</td>
+</tr>
+<tr>
+<td align="left"><code>slice</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.slice.md">slice</a></td>
+<td align="left">生成切片</td>
+</tr>
+<tr>
+<td align="left"><code>sorted</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.sorted.md">sorted</a></td>
+<td align="left">排序</td>
+</tr>
+<tr>
+<td align="left"><code>staticmethod</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.staticmethod.md">staticmethod</a></td>
+<td align="left">将方法转换为静态方法</td>
+</tr>
+<tr>
+<td align="left"><code>str</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.str.md">str</a></td>
+<td align="left">类型转换为 <code>str</code></td>
+</tr>
+<tr>
+<td align="left"><code>sum</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.sum.md">sum</a></td>
+<td align="left">求和</td>
+</tr>
+<tr>
+<td align="left"><code>super</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.super.md">super</a></td>
+<td align="left">获取父类</td>
+</tr>
+<tr>
+<td align="left"><code>tuple</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.tuple.md">tuple</a></td>
+<td align="left">类型转换为 <code>tuple</code></td>
+</tr>
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.type.md">type</a></td>
+<td align="left">获取类型</td>
+</tr>
+<tr>
+<td align="left"><code>vars</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.vars.md">vars</a></td>
+<td align="left">获取对象的属性列表</td>
+</tr>
+<tr>
+<td align="left"><code>zip</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.zip.md">zip</a></td>
+<td align="left">多个迭代器组合成元组迭代器</td>
+</tr>
+<tr>
+<td align="left"><code>__import__</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://xplanc.org/primers/document/zh/02.Python/EX.%E5%86%85%E5%BB%BA%E5%87%BD%E6%95%B0.hide/EX.__import__.md"><strong>import</strong></a></td>
+<td align="left">导入模块</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://pycat0210.github.io/blog/2025/05/14/Python%E7%9A%84%E5%85%A8%E9%83%A8%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/" data-id="cmamr2x8a0000kgvnd4p3goqy" data-title="Python的全部内置函数" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/blog/2025/04/29/%E6%B8%B8%E6%88%8F%E7%8E%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">游戏王</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/AI-%E8%BE%85%E5%8A%A9%E5%88%9B%E4%BD%9C/" rel="tag">AI 辅助创作</a></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/%E5%8A%A8%E7%94%BB/" rel="tag">动画</a></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/blog/tags/AI-%E8%BE%85%E5%8A%A9%E5%88%9B%E4%BD%9C/" style="font-size: 20px;">AI 辅助创作</a> <a href="/blog/tags/Python/" style="font-size: 10px;">Python</a> <a href="/blog/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 20px;">动画</a> <a href="/blog/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 10px;">编程</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2025/05/">May 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2025/04/">April 2025</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/blog/2025/05/14/Python%E7%9A%84%E5%85%A8%E9%83%A8%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/">Python的全部内置函数</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2025/04/29/%E6%B8%B8%E6%88%8F%E7%8E%8B/">游戏王</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2025/04/22/%E5%9C%A3%E6%96%97%E5%A3%AB/">圣斗士</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2025/04/21/%E6%B5%AA%E5%AE%A2%E5%89%91%E5%BF%83/">浪客剑心</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2025/04/20/JOJO%E7%9A%84%E5%A5%87%E5%A6%99%E5%86%92%E9%99%A9/">JOJO的奇妙冒险</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+        友情链接: <a href="https://hubenchang0515.github.io/" target="_blank">Plan C 的主页</a><br/>
+      
+      &copy; 2025 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/blog/" class="mobile-nav-link">Home</a>
+  
+    <a href="/blog/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/blog/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/blog/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/blog/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
